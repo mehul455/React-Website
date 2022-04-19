@@ -3,11 +3,14 @@ import { NavLink } from "react-router-dom";
 import { BsMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import * as themeActions from "../reduxdark/actiondark/Darktype";
 import { useSelector, useDispatch } from "react-redux";
+import logo from '../images/logo/webgohill.png'
+import logo2 from '../images/logo/white.png'
 
+import '../css/nav.css'
 const Navbar = () => {
     const dispatch = useDispatch();
     const themeReducer = useSelector((themeReducer) => themeReducer.Darkreducer);
-    let { theme } = themeReducer;
+    let { theme } =themeReducer;
     
     const switchDarkMode = () => {
         // themeReducer.Darkreducer.theme
@@ -17,16 +20,17 @@ const Navbar = () => {
       };
       useEffect(() => {
         //changing color of body with darkmode in useEffect
-        document.body.style.backgroundColor = theme ? "black" : "#fff";
-        document.body.style.color = theme ? "white" : "black";
+        document.body.style.backgroundColor = theme ? "#18191a" : "#fff";
+        document.body.style.color = theme ? "white" : "#18191a";
 
       }, [theme]);
   return (
     <>
-      <nav className={`navbar navbar-expand-lg   navbar-light ${theme ? 'darknav'  : 'bgColor'}`} >
+      <nav className={`navbar navbar-expand-lg   navbar-light ${theme ? 'darknav navbar-dark'  : 'bgColor'}`} >
         <div className="container-fluid">
-          <NavLink className={` ${theme ? 'darknavnavbar-brand' : 'navbar-brand' }`}  to="#"  >
-            Navbar
+          {/* <NavLink className={` ${theme ? 'darknavnavbar-brand' : 'navbar-brand' }`}  to="#"  > */}
+          <NavLink to="#" >
+            <img src={theme ? logo2 : logo} style={{border:'white'}} className='logos' alt="logo" />
           </NavLink>
           <button
             className="navbar-toggler"
@@ -91,13 +95,13 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <label class="switch mt-2" >
+                <label className="switch mt-2" >
                   <input type="checkbox" 
                   checked={theme}
                   onChange={switchDarkMode}
                    />
            
-                  <span class="slider round">
+                  <span className="slider round">
                   <BsMoonStarsFill color="white" style={{fontSize:"27px",paddingLeft:'5px',paddingTop:'5px'}}/>
           <BsFillSunFill color="yellow"  style={{fontSize:"30px",paddingLeft:'4px',paddingTop:'5px'}}/>
                   </span>

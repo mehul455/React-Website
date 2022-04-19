@@ -80,7 +80,7 @@ nav{
     background-size: cover;
     background-position: center;
     height: 90vh;
-
+    background-attachment: fixed;
 }
 
 .main-info{
@@ -276,3 +276,8 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+
+
+
+

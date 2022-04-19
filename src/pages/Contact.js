@@ -1,15 +1,20 @@
 import React from "react";
 import "../css/contact.css";
-
+import { useSelector } from "react-redux";
+import Header from "../component/header";
 const Contact = () => {
+  const themeReducer = useSelector((themeReducer) => themeReducer.Darkreducer);
+  let { theme } = themeReducer;
+  
   return (
     <>
       <div className="container mb-5">
-        <div className="row">
+        {/* <div className="row">
           <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center pt-5">
             <h2 className="form-title">Get in Touch</h2>
           </div>
-        </div>
+        </div> */}
+<Header heading="Get in Touch" theory='Fill The Form And Let Me Know You Like My WebSite  Or Any Changes You Want' />
 
         <div className="row">
           <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -21,6 +26,7 @@ const Contact = () => {
                   htmlFor="name"
                 ></label>
                 <input
+                  style={theme ? {backgroundColor:"#18191a", borderColor:'white',fontWeight:'bold',color:'white' }  : {backgroundColor:"white", borderColor:'black' }}
                   type="text"
                   className="form-control"
                   id="name"
@@ -38,6 +44,7 @@ const Contact = () => {
                   htmlFor="email"
                 ></label>
                 <input
+                    style={theme ? {backgroundColor:"#18191a", borderColor:'white',fontWeight:'bold',color:'white' }  : {backgroundColor:"white", borderColor:'black' }}
                   type="email"
                   className="form-control"
                   id="email"
@@ -55,8 +62,9 @@ const Contact = () => {
                   htmlFor="sublect"
                 ></label>
                 <input
+                  style={theme ? {backgroundColor:"#18191a", borderColor:'white',fontWeight:'bold',color:'white' }  : {backgroundColor:"white", borderColor:'black' }}
                   type="text"
-                  className="form-control"
+                  className="form-control "
                   id="subject"
                   name="subject"
                   placeholder="Subject"
@@ -72,6 +80,7 @@ const Contact = () => {
                   htmlFor="message"
                 ></label>
                 <textarea
+                  style={theme ? {backgroundColor:"#18191a", borderColor:'white',fontWeight:'bold',color:'white'}  : {backgroundColor:"white", borderColor:'black' }}
                   rows="4"
                   cols="60"
                   name="message"
@@ -85,6 +94,7 @@ const Contact = () => {
 
               <div className="text-center margin-top-15">
                 <button
+                  style={theme ? {backgroundColor:"white", borderColor:'white',fontWeight:'bold',color:'black' }  : {backgroundColor:"black", borderColor:'black' , color:'white' }}
                   type="submit"
                   onClick={(e)=>e.preventDefault()}
                   className="btn btn-mod btn-border btn-large"

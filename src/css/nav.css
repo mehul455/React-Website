@@ -1,0 +1,21 @@
+@media (min-width: 360px) and (max-width: 1024px) { 
+
+    .logos{
+        height:59px !important ;
+        width:83px !important;
+        top:1px !important;
+    }
+  
+  
+
+
+
+
+   }
+.logos{
+    height:72px;
+    width: 86px;
+    position: absolute;
+    top: 1%;
+    
+}

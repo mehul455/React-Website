@@ -19,7 +19,10 @@ const About = () => {
             <h2>About</h2>
           </div>
           <div className="flex-container">
-            <img src={web} alt="jkh" />
+           <div className="loader">
+            </div>
+            <img src={web}  alt="jkh" />
+
           </div>
           <div className="heading">
             <p style={{ fontSize: "20px", fontWeight: "bold"}}>Hi! I'm Mehul</p>

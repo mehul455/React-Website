@@ -1,4 +1,4 @@
-@media (min-width: 360px) and (max-width:740px) {
+/* @media (min-width: 360px) and (max-width:740px) {
     .resbtn{
    position: fixed;
    width: 100%;
@@ -12,3 +12,30 @@
    
     }
    }
+    */
+
+   .resbtn{
+    position: fixed;
+    width: 100%;
+    left: 95%;
+    bottom: 60px;
+    height: 20px;
+    font-size: 2rem;
+    z-index: 1;
+    cursor: pointer;
+    color: blue;
+   }
+       @media (max-width: 768px) {
+    .resbtn{
+        position: fixed;
+        width: 100%;
+        left: 95%;
+        bottom: 60px;
+        height: 20px;
+        font-size: 2rem;
+        z-index: 1;
+        cursor: pointer;
+        color: blue;
+        
+         }
+   } 

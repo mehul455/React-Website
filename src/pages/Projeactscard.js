@@ -68,43 +68,43 @@ const Projeactscard = () => {
       id: 1,
       image: "https://i.redd.it/b3esnz5ra34y.jpg",
       title: 'This is a portfolio item title',
-      download: 'https://stackoverflow.com/questions/50709625/link-with-target-blank-and-rel-noopener-noreferrer-still-vulnerable',
-      Preview: 'https://stackoverflow.com/questions/50709625/link-with-target-blank-and-rel-noopener-noreferrer-still-vulnerable'
+      download: 'https://github.com/mehul455',
+      Preview: 'https://github.com/mehul455'
     },
     {
       id: 2,
       image: "https://i.redd.it/b3esnz5ra34y.jpg",
       title: 'This is a portfolio item title',
-      download: 'https://stackoverflow.com/questions/50709625/link-with-target-blank-and-rel-noopener-noreferrer-still-vulnerable',
-      Preview: 'https://stackoverflow.com/questions/50709625/link-with-target-blank-and-rel-noopener-noreferrer-still-vulnerable'
+      download: 'https://github.com/mehul455',
+      Preview: 'https://github.com/mehul455'
     },
     {
       id: 3,
       image: "https://i.redd.it/b3esnz5ra34y.jpg",
       title: 'This is a portfolio item title',
-      download: 'https://stackoverflow.com/questions/50709625/link-with-target-blank-and-rel-noopener-noreferrer-still-vulnerable',
-      Preview: 'https://stackoverflow.com/questions/50709625/link-with-target-blank-and-rel-noopener-noreferrer-still-vulnerable'
+      download: 'https://github.com/mehul455',
+      Preview: 'https://github.com/mehul455'
     },
     {
       id: 4,
       image: "https://i.redd.it/b3esnz5ra34y.jpg",
       title: 'This is a portfolio item title',
-      download: 'https://stackoverflow.com/questions/50709625/link-with-target-blank-and-rel-noopener-noreferrer-still-vulnerable',
-      Preview: 'https://stackoverflow.com/questions/50709625/link-with-target-blank-and-rel-noopener-noreferrer-still-vulnerable'
+      download: 'https://github.com/mehul455',
+      Preview: 'https://github.com/mehul455'
     },
     {
       id: 5,
       image: "https://i.redd.it/b3esnz5ra34y.jpg",
       title: 'This is a portfolio item title',
-      download: 'https://stackoverflow.com/questions/50709625/link-with-target-blank-and-rel-noopener-noreferrer-still-vulnerable',
-      Preview: 'https://stackoverflow.com/questions/50709625/link-with-target-blank-and-rel-noopener-noreferrer-still-vulnerable'
+      download: 'https://github.com/mehul455',
+      Preview: 'https://github.com/mehul455'
     },
     {
       id: 6,
       image: "https://i.redd.it/b3esnz5ra34y.jpg",
       title: 'This is a portfolio item title',
-      download: 'https://stackoverflow.com/questions/50709625/link-with-target-blank-and-rel-noopener-noreferrer-still-vulnerable',
-      Preview: 'https://stackoverflow.com/questions/50709625/link-with-target-blank-and-rel-noopener-noreferrer-still-vulnerable'
+      download: 'https://github.com/mehul455',
+      Preview: 'https://github.com/mehul455'
     }
   ]
   const themeReducer = useSelector((themeReducer) => themeReducer.Darkreducer);
@@ -120,7 +120,7 @@ const Projeactscard = () => {
           {
 
             data.map(({ id, image, title, download, Preview }) => {
-              console.log(id, "kk")
+              // console.log(id, "kk")
               return (
 
                 <article key={id} >
@@ -130,8 +130,8 @@ const Projeactscard = () => {
                     </div>
                     <h3 style={theme ? { color: 'white' } : { color: "black" }}>{title}</h3>
                     <div className='portfolio_item_cta'>
-                      <a href={download} className={`${theme ? 'btn btn-light rounded-pill' : 'btn btn-dark rounded-pill'}`} target='_blank'>Download</a>
-                      <a href={Preview} className={`${theme ? 'btn btn-danger rounded-pill' : 'btn btn-danger rounded-pill'}`} target='_blank'>demo</a>
+                      <a href={download} className={`${theme ? 'btn btn-light rounded-pill' : 'btn btn-dark rounded-pill'}`} rel="noopener noreferrer"target='_blank'>Download</a>
+                      <a href={Preview} className={`${theme ? 'btn btn-danger rounded-pill' : 'btn btn-danger rounded-pill'}`} rel="noopener noreferrer"target='_blank'>demo</a>
                     </div>
                   </div>
                 </article>

@@ -30,7 +30,7 @@ const Navbar = () => {
         <div className="container-fluid">
           {/* <NavLink className={` ${theme ? 'darknavnavbar-brand' : 'navbar-brand' }`}  to="#"  > */}
           <NavLink to="#" >
-            <img src={theme ? logo2 : logo} style={{border:'white'}} className='logos' alt="logo" />
+            <img src={theme ? logo2 : logo}  className='logos' alt="logo" />
           </NavLink>
           <button
             className="navbar-toggler"

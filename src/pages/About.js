@@ -1,5 +1,5 @@
 import React from "react";
-import web from "../images/Ggtt.png";
+import web from "../images/mehul.jpg";
 // import {Link} from 'react-router-dom'
 const About = () => {
   // const [clicked, setClicked] = useState(false);
@@ -21,7 +21,7 @@ const About = () => {
           <div className="flex-container">
            <div className="loader">
             </div>
-            <img src={web}  alt="jkh" />
+            <img src={web} style={{width:"200px",height:"180px", borderRadius:"100%"}}  alt="jkh" />
 
           </div>
           <div className="heading">

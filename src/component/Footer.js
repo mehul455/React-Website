@@ -2,6 +2,9 @@ import React from 'react'
 import { useSelector } from "react-redux";
 import { Link } from 'react-router-dom';
 import logo from '../images/logo/webgohill.png'
+
+import logo2 from '../images/logo/white.png'
+
 import '../css/footer.css'
 const Footer = () => {
    const themeReducer = useSelector((themeReducer) => themeReducer.Darkreducer);
@@ -64,7 +67,7 @@ const Footer = () => {
                     <div className="col-xl-4 col-lg-4 mb-50">
                         <div className="footer-widget">
                             <div className="footer-logo">
-                                <Link to="index.html"><img src={logo} style={{height:"100px",width:"130px"}} className="img-fluid" alt="logo"/></Link>
+                                <Link to="index.html"><img src={theme ? logo2 : logo} style={{height:"100px",width:"130px"}} className="img-fluid" alt="logo"/></Link>
                             </div>
                             <div className="footer-text">
                                 <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
@@ -121,7 +124,7 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-xl-6 col-lg-6 text-center text-lg-left">
                         <div className="copyright-text">
-                            <p>Copyright &copy; 2018, All Right Reserved <Link to="#">Anup</Link></p>
+                            <p>Copyright &copy; 2022, All Right Reserved <Link to="#">WebGohil</Link></p>
                         </div>
                     </div>
                     <div className="col-xl-6 col-lg-6 d-none d-lg-block text-right">

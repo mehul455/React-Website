@@ -1,110 +1,52 @@
-// import React from 'react'
 
-// const Projeactscard = () => {
-//     return (
-//         <>
-//             <div className="container mb-5" >
-
-//         <div className="row">
-//     <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">                        
-//       <h2 className="form-title">Get in Touch</h2>
-//     </div>
-// </div>
-// <div className="cards-list">
-//   <div className="card 1">
-//     <div className="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" alt="pic" /> </div>
-//     <div className="card_title title-white">
-//     <p>Preview</p>
-//       <button>Download</button>
-//           </div>
-//   </div>
-
-//     <div className="card 1">
-//     <div className="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" alt="pic" /> </div>
-//     <div className="card_title title-white">
-//     <p>Preview</p>
-//       <button>Download</button>    </div>
-//   </div>
-//   <div className="card 1">
-//     <div className="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" alt="pic" /> </div>
-//     <div className="card_title title-white">
-//     <p>Preview</p>
-//       <button>Download</button>    </div>
-//   </div>
-//   <div className="card 1">
-//     <div className="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" alt="pic" /> </div>
-//     <div className="card_title title-white">
-//     <p>Preview</p>
-//       <button>Download</button>    </div>
-//   </div>
-//   <div className="card 1">
-//     <div className="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" alt="pic" /> </div>
-//     <div className="card_title title-white">
-//     <p>Preview</p>
-//       <button>Download</button>    </div>
-//   </div>
-//   <div className="card 1">
-//     <div className="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" alt="pic" /> </div>
-//     <div className="card_title title-white">
-//       <p>Preview</p>
-//       <button>Download</button>
-//     </div>
-//   </div>
-//   </div>
-//   </div>
-//         </>
-//     )
-// }
-
-// export default Projeactscard
 
 import React from 'react'
 import { useSelector } from 'react-redux';
 import '../css/card_project.css'
 import { Link } from 'react-router-dom';
 import Header from '../component/header';
-const Projeactscard = () => {
+const FreeProject = () => {
   const data = [
     {
       id: 1,
       image: "https://i.redd.it/b3esnz5ra34y.jpg",
       title: 'This is a portfolio item title',
-      link:'/free',
+      // download: 'https://github.com/mehul455',
       Preview: 'https://github.com/mehul455'
     },
     {
       id: 2,
       image: "https://i.redd.it/b3esnz5ra34y.jpg",
       title: 'This is a portfolio item title',
-      link:'/',
+      // download: 'https://github.com/mehul455',
       Preview: 'https://github.com/mehul455'
     },
     {
       id: 3,
       image: "https://i.redd.it/b3esnz5ra34y.jpg",
       title: 'This is a portfolio item title',
-      link:'/free',
+      // download: 'https://github.com/mehul455',
       Preview: 'https://github.com/mehul455'
     },
     {
       id: 4,
       image: "https://i.redd.it/b3esnz5ra34y.jpg",
       title: 'This is a portfolio item title',
-      link:'/free',
+      // download: 'https://github.com/mehul455',
       Preview: 'https://github.com/mehul455'
     },
     {
       id: 5,
       image: "https://i.redd.it/b3esnz5ra34y.jpg",
       title: 'This is a portfolio item title',
-      link:'/free',
+      // download: 'https://github.com/mehul455',
       Preview: 'https://github.com/mehul455'
     },
     {
       id: 6,
       image: "https://i.redd.it/b3esnz5ra34y.jpg",
       title: 'This is a portfolio item title',
-      link:'/free',
+      // download: 'https://github.com/mehul455',
       Preview: 'https://github.com/mehul455'
     }
   ]
@@ -120,7 +62,7 @@ const Projeactscard = () => {
 
           {
 
-            data.map(({ id, image, title, download, Preview,link }) => {
+            data.map(({ id, image, title, download, Preview }) => {
               // console.log(id, "kk")
               return (
 
@@ -133,8 +75,8 @@ const Projeactscard = () => {
                     <div className='portfolio_item_cta'>
                       {/* <a href={download} className={`${theme ? 'btn btn-light rounded-pill' : 'btn btn-dark rounded-pill'}`} rel="noopener noreferrer"target='_blank'>Download</a> */}
                       {/* <a href={Preview} className={`${theme ? 'btn btn-danger rounded-pill' : 'btn btn-danger rounded-pill'}`} rel="noopener noreferrer"target='_blank'>demo</a> */}
-                      <Link to={link} className={`${theme ? 'btn btn-light rounded-pill' : 'btn btn-dark rounded-pill'}`} rel="noopener noreferrer" >Html</Link>
-                      <Link to={link} className={`${theme ? 'btn btn-light rounded-pill' : 'btn btn-dark rounded-pill'}`} rel="noopener noreferrer" >React</Link>
+                      <Link className={`${theme ? 'btn btn-light rounded-pill' : 'btn btn-dark rounded-pill'}`} rel="noopener noreferrer" target='_blank'>Html</Link>
+                      <Link className={`${theme ? 'btn btn-light rounded-pill' : 'btn btn-dark rounded-pill'}`} rel="noopener noreferrer" target='_blank'>React</Link>
                       
                     </div>
                   </div>
@@ -151,4 +93,4 @@ const Projeactscard = () => {
   )
 }
 
-export default Projeactscard
+export default FreeProject

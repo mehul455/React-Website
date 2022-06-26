@@ -76,7 +76,7 @@ nav{
 
 .header-wrapper{
     position: relative;
-    background: url("../images/greg-rakozy-oMpAz-DN-9I-unsplash.jpg");
+    background: url("../images/wall.jpg");
     background-size: cover;
     background-position: center;
     height: 90vh;
@@ -145,7 +145,7 @@ nav{
     padding: 0.625rem 0.75rem 0.75rem 0.75rem;
     margin: 2rem;   
     text-align: center;
-    color: #000;
+    color: white;
     text-transform: uppercase;
     cursor: pointer;
     display: inline-block;
@@ -159,12 +159,12 @@ nav{
     border-radius: 50px;
     -webkit-transition: all .15s ease-in-out;
     transition: all .15s ease-in-out;
-    color: black;
+    color: white;
   }
   .button-1:hover {
     box-shadow: 0 0 10px 0 #fc4444 inset, 0 0 20px 2px #e8641e;
     border: 3px solid #fc4444;
-    color: black;
+    color: white;
     font-weight: bold;
   }
   
@@ -173,7 +173,7 @@ nav{
 
     padding: 0.625rem 0.75rem 0.75rem 0.75rem;
     text-align: center;
-    color: #000;
+    color: white;
     text-transform: uppercase;
     cursor: pointer;
     display: inline-block;
@@ -186,12 +186,12 @@ nav{
     border-radius: 50px;
     -webkit-transition: all .15s ease-in-out;
     transition: all .15s ease-in-out;
-    color: black;
+    color: white;
   }
   .button-2:hover {
     box-shadow: 0 0 10px 0 #fc4444 inset, 0 0 20px 2px #e8641e;
     border: 3px solid #fc4444;
-    color: black;
+    color: white;
     font-weight: bold;
   }
   
